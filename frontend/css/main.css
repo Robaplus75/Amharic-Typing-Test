@@ -1,0 +1,28 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --color1: #e2b713;
+    --color2: #65666a;
+    --color3: #333438;
+    --color4: #2d2e32;
+}
+
+body{
+    background-color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 800px;
+    padding: 0;
+}

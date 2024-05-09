@@ -1,0 +1,19 @@
+.nav{
+    flex: .8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .nav_logo{
+    margin-left: 3%;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 2.5vw;
+}
+
+.nav .nav_logo span{
+    color: var(--color1);
+    font-size: 3vw;
+    font-weight: bolder;
+}

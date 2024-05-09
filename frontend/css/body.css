@@ -1,0 +1,50 @@
+.body{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.body_content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.body_setup_box{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body_setups{
+    background-color: var(--color4);
+    width: 80%;
+    height: 40%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--color2);
+    font-weight: bold;
+}
+.body_text{
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body_text .text{
+    max-width: 90%;
+    height: 50%;
+    font-size: 3vw;
+    overflow-y: scroll;
+    word-break: break-all;
+    color: var(--color2);
+}
+
+.text div{
+    display: inline-block;
+    color: var(--color1);
+  }
+.text{
+
+}
