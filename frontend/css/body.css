@@ -31,6 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .body_text .text{
     max-width: 90%;
@@ -45,6 +46,39 @@
     display: inline-block;
     color: var(--color1);
   }
-.text{
+.highlighter{
+    color: var(--color1);
+}
 
+.language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.language button{
+    margin-left: 7%;
+    background-color: var(--color3);
+    border: none;
+    border-radius: 10%;
+    padding: 3px;
+    transition: all ease .5s;
+}
+
+.english_btn{
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: var(--color2);
+}
+.english_btn:hover{
+    font-size: 2.8vw;
+}
+.amharic_btn{
+    font-size: 3vw;
+    font-weight: bolder;
+    color:var(--color1)
+}
+.amharic_btn:hover{
+    font-size: 3.3vw;
 }
