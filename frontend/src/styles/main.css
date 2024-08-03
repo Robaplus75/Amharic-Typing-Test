@@ -10,9 +10,11 @@
     --color2: #65666a;
     --color3: #333438;
     --color4: #2d2e32;
+    --color5: white;
+    --color6: red;
 }
 
-body{
+.root-body{
     background-color: var(--color3);
     display: flex;
     flex-direction: column;

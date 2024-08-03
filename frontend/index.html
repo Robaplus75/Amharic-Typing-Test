@@ -1,66 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amharic Typing Test</title>
-    
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/body.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/loadingCursor.css" />
-</head>
-<body>
-<!-- በሲቪል ነጻነት፣ በምርጫ እና ፖለቲካዊ ብዝኃነት፣ በማኅበረ-ፖለቲካዊ መብቶች፣ በመንግሥት አገልግሎት ቀልጣፋነት፣ በአናሳ ቁጥር ያላቸው ሕዝቦች ጥበቃ ወይም በሥልጣን ቁጥጥር እና ሚዛን ርዕሰ ጉዳዮች የተለየ ትኩረት እና ዕውቀት ያላቸው -->
-    <div class="container">
-
-        <div class="nav">
-            <div class="nav_logo">
-                <span>ሐበሻ</span>Typer
-            </div>
-            <div></div>
-        </div>
-
-        <div class="body">
-            <div id="body_content" class="body_content">
-                <div class="body_setup_box">
-                    <div class="body_setups">
-                        <div>10s</div>
-                        <div>15s</div>
-                        <div>20s</div>
-                        <div>30s</div>
-                    </div>
-                </div>
-                <div class="language">
-                    <button class="amharic_btn" id="amh_btn" onClick="amh_lang()">አማርኛ</button>
-                    <button class="english_btn" id="eng_btn" onClick="eng_lang()">English</button>
-                </div>
-                <div class="body_text">
-                    <div id="text" class="text">ፈጣኑ ቡናማ ቀበሮ ከግድግዳው በላይ ዘለለ.</div>
-                    <input type="text" id="input_bar" class="input_bar" value="" autofocus/>
-                </div>
-            </div>
-            <div id="loading-circle" class="center" style="display:none">
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <div>Telegram: @kingsforme</div>
-        </div>
-    </div>
-
-    
-    <script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root" class="root-body"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

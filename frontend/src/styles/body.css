@@ -9,13 +9,18 @@
     display: flex;
     flex-direction: column;
 }
-.body_setup_box{
+.bar1{
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.body_setups{
+.bar2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.time_setups{
     background-color: var(--color4);
     width: 80%;
     height: 40%;
@@ -26,28 +31,57 @@
     color: var(--color2);
     font-weight: bold;
 }
-.body_text{
+.bar3{
     flex: 4;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.body_text .text{
+.bar3 .text{
     max-width: 90%;
-    height: 50%;
-    font-size: 3vw;
-    overflow-y: scroll;
+    height: 105px;
+    font-size: 1.3em;
+    overflow: hidden;
     word-break: break-all;
     color: var(--color2);
+    line-height: 35px;
+}
+.bar3 .word{
+    display: inline-block;
+    font-family: monospace;
+    margin: 0 5px;
 }
 
-.text div{
-    display: inline-block;
+
+#bar3 #text{
+    filter: blur(5px);
+    cursor: pointer;
+}
+
+#bar3:focus #text{
+    filter: blur(0);
+    cursor: default;
+}
+#bar3:focus #focus-error{
+    display: none;
+}
+.correct{
+    color: var(--color5);
+}
+.wrong{
+    color: var(--color6);
+}
+
+
+
+
+#focus-error{
+    position: absolute;
     color: var(--color1);
-  }
-.highlighter{
-    color: var(--color1);
+    font-weight: bold;
+    text-shadow: 0 0 7px var(--color1);
+    cursor: pointer;
 }
 
 .language{
@@ -57,28 +91,41 @@
     margin: 10px;
 }
 
-.language button{
+.bar2 button{
     margin-left: 7%;
     background-color: var(--color3);
     border: none;
     border-radius: 10%;
     padding: 3px;
     transition: all ease .5s;
+    font-weight: bold;
+}
+.timer{
+    color: var(--color2);
 }
 
 .english_btn{
-    font-size: 2.5vw;
-    font-weight: bold;
+    color: var(--color2);
+    font-size: 1em;
+}
+.bar2 button:hover {
+    box-shadow: 0 0 10px var(--color1);
+    cursor: pointer;
+}
+
+.reset_btn{
     color: var(--color2);
 }
-.english_btn:hover{
-    font-size: 2.8vw;
-}
 .amharic_btn{
-    font-size: 3vw;
-    font-weight: bolder;
-    color:var(--color1)
+    color: var(--color2);
+    font-size: 1.2em;
 }
-.amharic_btn:hover{
-    font-size: 3.3vw;
+
+.btn_select{
+    color: var(--color1);
+    box-shadow: 0 0 10px var(--color1);
 }
+.time_select{
+    color: var(--color1);
+}
+
