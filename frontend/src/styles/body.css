@@ -73,6 +73,17 @@
     color: var(--color6);
 }
 
+.current{
+    border-bottom: 4px solid var(--color1);
+    color: var(--color2);
+    animation: none;
+}
+
+#bar3:focus .current{
+    animation: blink 1s infinite;
+}
+
+
 
 
 
@@ -129,3 +140,16 @@
     color: var(--color1);
 }
 
+
+
+@keyframes blink {
+    0% {
+        border-bottom-color: transparent;
+    }
+    50% {
+        border-bottom-color: var(--color1);
+    }
+    100% {
+        border-bottom-color: transparent;
+    }
+}
